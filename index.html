@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,22 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Login Page</title>
 </head>
+
 <body>
     <div class="login-container">
-        <h2>Selamat Datang</h2>
+        <h2>Welcome!</h2>
         <form action="your_login_script.php" method="post">
             <div class="input-group">
                 <input type="text" name="username" id="username" required>
                 <label for="username">Username</label>
             </div>
-            <div class="input-group">
+            <div class="input-group" style="margin-bottom: 10px;">
                 <input type="password" name="password" id="password" required>
                 <label for="password">Password</label>
-                <span class="toggle-password" onclick="togglePassword()"><i class="bi bi-eye" id="toggleIcon"></i></span>
+                <span class="toggle-password" onclick="togglePassword()"><i class="bi bi-eye"
+                        id="toggleIcon"></i></span>
             </div>
+            <a href="#" style="float: left; margin-bottom: 25px; font-size: small">forgot password or username?</a>
             <button type="submit" name="submit">Login</button>
             <p class="created">Created by Rakha Adhiwidya</p>
         </form>
@@ -41,4 +45,5 @@
         }
     </script>
 </body>
+
 </html>
